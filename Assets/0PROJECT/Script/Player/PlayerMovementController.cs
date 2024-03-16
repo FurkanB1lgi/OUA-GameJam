@@ -5,15 +5,28 @@ using UnityEngine.AI;
 public class PlayerMovementController : InstanceManager<PlayerMovementController>
 {
     private NavMeshAgent agent => GetComponent<NavMeshAgent>();
-
     private PlayerStateManager playerStateManager => GetComponent<PlayerStateManager>();
+
+    public LayerMask WalkableLayerMask;
 
     void Update()
     {
-        PlayerMove();
+        if (Input.GetMouseButtonDown(0) && !UIManager.Instance.DialoguePanel.activeInHierarchy)
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit, WalkableLayerMask))
+            {
+                if (hit.transform.tag == "Ground")
+                {
+                    PlayerMove();
+                }
+            }
+        }
     }
 
-    void PlayerMove()
+    public void PlayerMove()
     {
         if (Input.GetMouseButtonDown(0))
         {

@@ -5016,11 +5016,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 2857b989c828950448ead142ca28e4a3, type: 3}
   m_PrefabInstance: {fileID: 475220086}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &481816195 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: 931fa17f0ab17504bbfc8903e54e6a16, type: 3}
-  m_PrefabInstance: {fileID: 778243815}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &483648070
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7767,7 +7762,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 723616566}
-  m_LocalRotation: {x: 0.4761859, y: 0.40345585, z: -0.26085737, w: 0.73649424}
+  m_LocalRotation: {x: 0.47618595, y: 0.4034558, z: -0.26085734, w: 0.7364943}
   m_LocalPosition: {x: -16.068771, y: 37.14, z: -5.2891455}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -8345,8 +8340,8 @@ PrefabInstance:
     m_TransformParent: {fileID: 634645342}
     m_Modifications:
     - target: {fileID: 100000, guid: 931fa17f0ab17504bbfc8903e54e6a16, type: 3}
-      propertyPath: m_Layer
-      value: 6
+      propertyPath: m_Name
+      value: Building_Fruits  Shop
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 931fa17f0ab17504bbfc8903e54e6a16, type: 3}
       propertyPath: m_RootOrder
@@ -8354,7 +8349,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 931fa17f0ab17504bbfc8903e54e6a16, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.74
+      value: 15.740002
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 931fa17f0ab17504bbfc8903e54e6a16, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8362,11 +8357,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 931fa17f0ab17504bbfc8903e54e6a16, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 15.51
+      value: 15.509998
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 931fa17f0ab17504bbfc8903e54e6a16, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.00000016292068
+      value: -0.00000014901161
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 931fa17f0ab17504bbfc8903e54e6a16, type: 3}
       propertyPath: m_LocalRotation.x
@@ -8380,6 +8375,18 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 931fa17f0ab17504bbfc8903e54e6a16, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 931fa17f0ab17504bbfc8903e54e6a16, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 931fa17f0ab17504bbfc8903e54e6a16, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 931fa17f0ab17504bbfc8903e54e6a16, type: 3}
 --- !u!4 &778243816 stripped
@@ -8387,53 +8394,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 931fa17f0ab17504bbfc8903e54e6a16, type: 3}
   m_PrefabInstance: {fileID: 778243815}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &778243817
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 481816195}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 10
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
---- !u!114 &778243820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 481816195}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6337b7ad285b743d0a2dfaa61c94fb5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  infoContent: "Teyzecim senin kediler nas\u0131l da\u011F\u0131lm\u0131\u015F \xF6yle
-    ya, ikisini uzun cadde \xFCzerinde, birini Sultan caddesinin ba\u015F\u0131nda,
-    di\u011Ferini de o caddenin sonunda hayvansever soka\u011Fa do\u011Fru g\xF6rd\xFCm.
-    Yard\u0131ma ihtiya\xE7lar\u0131 olabilir h\u0131zl\u0131 olmal\u0131s\u0131n."
---- !u!65 &778243821
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 481816195}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 12.126186, y: 11.605602, z: 12.155823}
-  m_Center: {x: 0.13457394, y: 5.802828, z: 0.08932376}
 --- !u!1001 &793538016
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10635,7 +10595,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.4761859, y: 0.40345585, z: -0.26085737, w: 0.73649424}
+  m_LocalRotation: {x: 0.47618595, y: 0.4034558, z: -0.26085734, w: 0.7364943}
   m_LocalPosition: {x: -16.068771, y: 37.14, z: -5.2891455}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -22804,6 +22764,10 @@ PrefabInstance:
     - target: {fileID: 3062199599948388492, guid: a87be4dcb3d9846e2a1a8fe1d6d109f6, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666020879195412, guid: a87be4dcb3d9846e2a1a8fe1d6d109f6, type: 3}
+      propertyPath: WalkableLayerMask.m_Bits
+      value: 128
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a87be4dcb3d9846e2a1a8fe1d6d109f6, type: 3}

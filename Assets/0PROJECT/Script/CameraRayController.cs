@@ -6,13 +6,14 @@ public class CameraRayController : InstanceManager<CameraRayController>
     public LayerMask WalkableLayerMask;
     public LayerMask InteractableLayerMask;
 
+    [Space(10)] [SerializeField] private IInteractable currentInteractable;
     private void Update()
     {
         GetMovePos();
-        Interact();
+        InteractableAciton();
     }
 
-    public void Interact()
+    public void InteractableAciton()
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
@@ -32,7 +33,12 @@ public class CameraRayController : InstanceManager<CameraRayController>
         {
             if (hit.transform.GetComponent<IInteractable>() != null)
             {
-                hit.transform.GetComponent<IInteractable>().OnMouse();
+                currentInteractable = hit.transform.GetComponent<IInteractable>();
+                currentInteractable.OnMouseDown();
+            }
+            else
+            {
+                currentInteractable?.OnMouseUp();
             }
         }
     }

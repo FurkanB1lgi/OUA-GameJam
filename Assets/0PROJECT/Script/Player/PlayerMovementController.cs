@@ -6,7 +6,7 @@ public class PlayerMovementController : InstanceManager<PlayerMovementController
 {
     private NavMeshAgent agent => GetComponent<NavMeshAgent>();
 
-    private PlayerStateManager playerStateManager;
+    private PlayerStateManager playerStateManager => GetComponent<PlayerStateManager>();
 
     void Update()
     {
@@ -19,7 +19,7 @@ public class PlayerMovementController : InstanceManager<PlayerMovementController
         {
             Vector3 targetPos = CameraRayController.Instance.GetMovePos();
             agent.SetDestination(new Vector3(targetPos.x, transform.position.y, targetPos.z));
-            // playerStateManager.s
+            playerStateManager.SwitchState(PlayerStateType.Walk);
         }
     }
 }

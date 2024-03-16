@@ -3,6 +3,6 @@ using UnityEngine;
 public interface IInteractable
 {
     void Interact();
-    void OnMouse();
-
+    void OnMouseDown();
+    void OnMouseUp();
 }

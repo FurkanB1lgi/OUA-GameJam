@@ -11,6 +11,8 @@ public class PlayerIdleState : PlayerBaseState
 
     public override void EnterState(PlayerStateManager player)
     {
+        player.animator.SetBool("IsWalk", false);
+        player.animator.SetBool("IsIdle", true);
     }
 
     public override void UpdateState(PlayerStateManager player)

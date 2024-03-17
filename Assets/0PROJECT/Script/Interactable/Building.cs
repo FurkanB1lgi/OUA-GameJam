@@ -14,8 +14,8 @@ public class Building : MonoBehaviour, IInteractable
 
     private void Start()
     {
+        outline.OutlineWidth = 9.5f;
         outline.enabled = false;
-        outline.OutlineWidth = 10;
     }
 
     public void Interact()
@@ -25,6 +25,8 @@ public class Building : MonoBehaviour, IInteractable
 
         UIManager.Instance.DialoguePanel.gameObject.SetActive(true);
         UIManager.Instance.DialoguePanel_Text.text = infoContent;
+
+        PlayerMovementController.Instance.PlayerStop();
     }
 
     public void OnMouseDown()

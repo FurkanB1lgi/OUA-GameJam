@@ -3,14 +3,9 @@ using System.Collections.Generic;
 
 public enum GameEvent
 {
-    OnStart,
+    OnCatFound,
 
-    //Camera
-    OnChangeCamDefault,
-    OnChangeCamSpesificTarget,
-
-    //Sound Events
-    OnPlaySound,
+    OnGameOver,
 }
 
 public static class EventManager

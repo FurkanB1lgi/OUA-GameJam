@@ -30,9 +30,16 @@ public class PlayerMovementController : InstanceManager<PlayerMovementController
     {
         if (Input.GetMouseButtonDown(0))
         {
+            agent.isStopped = false;
             Vector3 targetPos = CameraRayController.Instance.GetMovePos();
             agent.SetDestination(new Vector3(targetPos.x, transform.position.y, targetPos.z));
             playerStateManager.SwitchState(PlayerStateType.Walk);
         }
+    }
+
+    public void PlayerStop()
+    {
+        agent.isStopped = true;
+        playerStateManager.SwitchState(PlayerStateType.Idle);
     }
 }

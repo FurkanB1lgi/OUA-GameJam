@@ -32,6 +32,7 @@ public class Building : MonoBehaviour, IInteractable
     public void OnMouseDown()
     {
         outline.enabled = true;
+        outline.OutlineWidth = 9.5f;
     }
 
     public void OnMouseUp()

@@ -5,8 +5,10 @@ public enum GameEvent
 {
     OnStart,
 
-    //PLAYER EVENTS
-    
+    //Camera
+    OnChangeCamDefault,
+    OnChangeCamSpesificTarget,
+
     //Sound Events
     OnPlaySound,
 }

@@ -33,6 +33,7 @@ public class CameraRayController : InstanceManager<CameraRayController>
         {
             if (hit.transform.GetComponent<IInteractable>() != null)
             {
+                currentInteractable?.OnMouseUp();
                 currentInteractable = hit.transform.GetComponent<IInteractable>();
                 currentInteractable.OnMouseDown();
             }
